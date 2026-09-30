@@ -21,6 +21,9 @@ jobs:
           channel: stable
           cache: true
 
+      - name: Create Android platform
+        run: flutter create . --platforms=android --project-name ye_hidnist
+
       - name: Install dependencies
         run: flutter pub get
 
